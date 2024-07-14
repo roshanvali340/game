@@ -1,0 +1,67 @@
+/* src/components/WelcomeScreen.css */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light background color */
+}
+
+.welcome-heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; /* Dark text color */
+}
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #333; /* Thicker border */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  width: 80%;
+  max-width: 400px;
+}
+
+.welcome-screen h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.welcome-screen form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-screen input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.welcome-screen button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff; /* Blue color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .welcome-screen {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}

@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import WelcomeScreen from "./components/WelcomeScreen";
+import GameBoard from "./components/GameBoard";
 
-function App() {
+const App = () => {
+  const [hasStarted, setHasStarted] = useState(false);
+
+  const handleStart = () => {
+    setHasStarted(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {hasStarted ? <GameBoard /> : <WelcomeScreen onStart={handleStart} />}
     </div>
   );
-}
+};
 
 export default App;

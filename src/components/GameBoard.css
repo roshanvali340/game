@@ -1,0 +1,47 @@
+/* src/components/GameBoard.css */
+.game-board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #333; /* Thicker border */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  width: 80%; /* Adjust width to percentage for responsiveness */
+  max-width: 800px; /* Limit maximum width for larger screens */
+  margin: 20px auto; /* Center horizontally with auto margins */
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.player-name {
+  font-size: 1.5rem;
+}
+
+.score {
+  font-size: 1.5rem;
+}
+
+.time {
+  font-size: 1.5rem;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .game-board-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
